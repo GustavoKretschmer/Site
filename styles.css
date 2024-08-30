@@ -210,3 +210,14 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+}
