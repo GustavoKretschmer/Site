@@ -1,0 +1,212 @@
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav h1 {
+    color: #fff; /* Cor branca para melhor visibilidade */
+    font-size: 1.5rem; /* Aumentando o tamanho */
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #007BFF;
+    transform: scale(1.1);
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #00c6ff, #007BFF, #7fffd4); /* Gradiente com azul e verde menta */
+    text-align: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero-content {
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 span {
+    color: #FFD700;
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+    box-shadow: 0 0 10px #FFA500;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: scrollBounce 2s infinite;
+}
+
+@keyframes scrollBounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção Sobre Mim */
+.section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-container p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Seção Experiência e Projetos */
+.experience-item,
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover,
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
